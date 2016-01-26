@@ -33,4 +33,29 @@ describe('Shopping Cart', function(){
     shoppingCart.discount(10);
     assert.equal(36.00, shoppingCart.total)
   });
+  it('should deduct the buy one get one free items', function(){
+    shoppingCart.empty();
+    shoppingCart.addItem(5);
+    assert.equal(6.00, shoppingCart.total);
+  })
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
