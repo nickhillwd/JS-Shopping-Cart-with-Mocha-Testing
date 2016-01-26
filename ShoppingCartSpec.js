@@ -13,8 +13,14 @@ describe('Shopping Cart', function(){
   it('should start at 0 item count', function(){
     assert.equal(0, shoppingCart.itemCount)
   });
+  it('should start with a total price of 0', function(){
+    assert.equal(0, shoppingCart.total);
+  });
   it('should add items to shopping cart', function(){
     shoppingCart.addItem(1)
-    assert.equal(1, shoppingCart.itemCount)
+    assert.equal(1, shoppingCart.itemCount);
+  });
+  it('should keep a track of the total cost', function(){
+    assert.equal(2.00, shoppingCart.total);
   });
 })
