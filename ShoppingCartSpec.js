@@ -23,4 +23,8 @@ describe('Shopping Cart', function(){
   it('should keep a track of the total cost', function(){
     assert.equal(2.00, shoppingCart.total);
   });
+  it('should epmty shopping cart', function(){
+    shoppingCart.empty();
+    assert.equal(0, shoppingCart.total)
+  });
 })

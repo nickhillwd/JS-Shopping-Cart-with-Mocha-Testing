@@ -6,6 +6,9 @@ var shoppingCart = {
   addItem: function(quantity){
     this.itemCount += quantity;
     this.total += (basketItems.price);
+  },
+  empty: function(){
+    this.total = 0;
   }
 }
 
