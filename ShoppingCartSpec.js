@@ -23,8 +23,14 @@ describe('Shopping Cart', function(){
   it('should keep a track of the total cost', function(){
     assert.equal(2.00, shoppingCart.total);
   });
-  it('should epmty shopping cart', function(){
+  it('should empty shopping cart', function(){
     shoppingCart.empty();
     assert.equal(0, shoppingCart.total)
+  });
+  it('should calculate and apply 10% discount to total when total over £20', function(){
+    // shoppingCart.empty();
+    shoppingCart.addItem(20);
+    shoppingCart.discount(10);
+    assert.equal(36.00, shoppingCart.total)
   });
 })
