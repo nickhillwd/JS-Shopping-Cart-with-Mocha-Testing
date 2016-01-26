@@ -1,5 +1,5 @@
 var basketItems = {
-  price: 1.00
+  price: 2.00
 }
 
 module.exports = basketItems;
