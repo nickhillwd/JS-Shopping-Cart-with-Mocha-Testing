@@ -19,6 +19,9 @@ var shoppingCart = {
     isEven = this.itemCount % 2;
     bogofItems = ((this.itemCount - isEven)/2);
     total = (this.total - (basketItems.price * bogofItems));
+  },
+  discountCard: function(){
+    shoppingCart.discount(5);
   }
 }
 

@@ -37,7 +37,13 @@ describe('Shopping Cart', function(){
     shoppingCart.empty();
     shoppingCart.addItem(5);
     assert.equal(6.00, shoppingCart.total);
-  })
+  });
+  it('should deduct 5% off the tatal', function(){
+    shoppingCart.empty();
+    shoppingCart.addItem(1);
+    shoppingCart.discountCard;
+    assert.equal(1.90, shoppingCart.total)
+  });
 })
 
 
